@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZADANIE FORMULARZ</title>
+</head>
+<body bgcolor="#87CEFA">
+    <center><h1>Formularz ogólny autor Oktawian Mazurek</h1></center>
+    <form enctype="text/plain" action="mailto:mkryniew@wp.pl" method="post" subject="formularz_dane">
+        <table border="1" cellspacing="0" cellpadding="10" align="center">
+            <!-- Pierwszy wiersz -->
+            <tr height="100">
+                <td width="500">
+                    <b>Imię</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input name="imie" size="22">
+                    <br><br>
+                    <b>Drugie imię</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input name="drugie" size="22">
+                    <br><br>
+                    <b>Nazwisko</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input name="nazwisko" size="22">
+                    <br><br>
+                    <b>Pseudonim artystyczny</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input name="login" size="22">
+                </td>
+                <td width="300">
+                    <center>
+                        <font size="5" color="red"><b>Podaj środek lokomacji dojazdu do pracy</b></font>
+                    </center>
+                    <br>
+                    <center>
+                        <select name="lokomocja">
+                            <option value="autobus">Autobus</option>
+                            <option value="motocykl">Motocykl</option>
+                            <option value="prom">Prom</option>
+                            <option value="samolot">Samolot</option>
+                            <option value="lodz">Łódź podwodna</option>
+                            <option value="kajak">Kajak</option>
+                        </select>
+                    </center>
+                </td>
+                <td width="500">
+                    Jaka jest Twoje ulubione ciastko?
+                    <br><br>
+                    <input type="checkbox" name="ciastko" value="beza"> BEZA
+                    <br><br>
+                    <input type="checkbox" name="ciastko" value="sernik"> SERNIK
+                    <br><br>
+                    <input type="checkbox" name="ciastko" value="inna"> INNE
+                    <br><br>
+                    Jeśli zaznaczyłeś INNE to podaj swoje ciastko (max: 100 znaków)
+                    <br><br>
+                    <input name="inna" size="25" maxlength="100">
+                </td>
+            </tr>
+
+            <!-- Drugi wiersz -->
+            <tr height="200">
+                <td>
+                    Czy umiesz programować?
+                    <br><br>
+                    <input type="radio" name="programowanie" value="tak"> Tak
+                    <br><br>
+                    <input type="radio" name="programowanie" value="nie"> Nie
+                    <br><br>
+                    <input type="radio" name="programowanie" value="nie_wiem"> Nie wiem
+                    <br><br>
+                    <b>W polu poniżej wpisz opinię na temat pogody:</b>
+                    <br>
+                    <textarea name="opinia" cols="50" rows="4"></textarea>
+                </td>
+                <td>
+                    Podaj czas: &nbsp;&nbsp;<input type="time" name="czas">
+                    <br><br>
+                    Podaj datę: &nbsp;&nbsp;<input type="date" name="data">
+                    <br><br>
+                    Wybierz kolor: &nbsp;&nbsp;<input type="color" name="kolor">
+                </td>
+                <td>
+                    Jaka jest wilgotność: &nbsp;&nbsp;<input type="range" name="wilgotnosc">
+                    <br><br>
+                    Proszę czekać...<br>
+                    <progress>Proszę czekać...</progress>
+                </td>
+            </tr>
+
+            <!-- Trzeci wiersz -->
+            <tr height="100">
+                <td>
+                    <button type="button" onclick="alert('A kuku')" style="height:80px;width:300px">
+                        Przycisk niespodzianka
+                    </button>
+                </td>
+                <td>
+                    <input type="reset" value="Reset" style="height:80px; width:150px">
+                </td>
+                <td>
+                    <input type="submit" value="Wyślij formularz" style="height:80px; width:150px">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
